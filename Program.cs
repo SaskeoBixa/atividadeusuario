@@ -1,13 +1,13 @@
-﻿Console.ForegroundColor = ConsoleColor.DarkMagenta;
+﻿Console.ForegroundColor = ConsoleColor.Magenta;
 Console.WriteLine("+------------------------------+");
 Console.WriteLine("|       Dados do Usuário       |");
 Console.WriteLine("+------------------------------+");
-Console.WriteLine("| Insira seu nome:             |");
-String nome = Console.ReadLine().PadLeft(1 , '|')!;
+Console.Write("| Insira seu nome: ");
+String nome = Console.ReadLine()!;
 
-Console.WriteLine("| Insira seu sobrenome:        |");
+Console.Write("| Insira seu sobrenome: "); 
 String sobrenome = Console.ReadLine()!;
 
 Console.WriteLine("+------------------------------+");
 Console.ResetColor();
-Console.WriteLine($"\nOla, {nome} {sobrenome}, seja bem vindo(a)!");
+Console.WriteLine($"\nOla, {nome} {sobrenome}, seja bem vindo(a)!\n");
